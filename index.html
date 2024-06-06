@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas automotrices</title>
+
+    <link rel="stylesheet" href="Style/css bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+    <header class="header" id="navbar">
+        <div class="logo"><img src="Resources/logo-white.png" alt=""></div>
+        <div class="hamburger-wrapper" id="toggle"> 
+            <button data-aa-action="aa-action" aria-label="hamburger" type="button" class="hamburger" tabindex="0" data-aa-link-text="hamburger icon close" data-link-action="close" id="btn-menu"> 
+                <ul> 
+                    <li></li> 
+                    <li></li> 
+                    <li></li> 
+                </ul> 
+                <div class="dot"></div> 
+            </button> 
+        </div>
+        <div class="navigation" id="listMenu">
+            <ul>
+                <li>
+                  <a href="#brands">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/baxknfaw.json"
+                        trigger="hover"
+                        colors="primary:#ffffff"
+                        style="width:25px;height:25px">
+                    </lord-icon>
+                    Todas las marcas
+                  </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <lord-icon 
+                      src="https://cdn.lordicon.com/lobpqdog.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style="width:25px;height:25px">
+                      </lord-icon>
+                      ¿Lo sabes?
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7">
+                            <defs></defs><g data-name="Layer 2">
+                             <g>
+                              <polyline class="cls-1" points="1 1 5.89 6 11 1.16"></polyline>
+                             </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li>
+                          <a href="#">Material para Leer e Interpretar Diagramas Automotrices</a></li>
+                        <li>
+                          <a href="#">Cómo Comprar y Pagar</a></li>
+                        <li>
+                          <a href="#">Buscador de CódigosDTC</a></li>
+                        <li>
+                          <a href="#">Cuál Scanner Automotriz Usar</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="#">
+                     <lord-icon 
+                      src="https://cdn.lordicon.com/mfmkufkr.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style="width:25px;height:25px">
+                      </lord-icon>
+                    Carrito
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     <lord-icon 
+                      src="https://cdn.lordicon.com/rsvfayfn.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style="width:25px;height:25px">
+                      </lord-icon>
+                    Contáctanos
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="slideshow-principal"> 
+            <div class="search-Banner">
+              <h1>BUSCA y ENCUENTRA Diagramas Eléctricos Automotrices</h1>
+              <div>
+                <form id="form-search" class="">
+                  <div>
+                    <div>
+                      <input type="text" id="input-search" placeholder="Dinos qué Diagrama buscas...">
+                      <label for="input-search"></label>
+                    </div>
+                    <a id="search-in-a">
+                      <div class="search-sh">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/kkvxgpti.json"
+                            trigger="hover"
+                            style="width:35px;height:35px">
+                        </lord-icon>
+                      </div>
+                    </a>
+                  </div>
+                </form>
+                <div class="search-option" id="search-option">
+                  <lord-icon
+                      src="https://cdn.lordicon.com/pflszboa.json"
+                      trigger="hover"
+                      colors="primary:#fff"
+                      style="width:35px;height:35px" id="oppIcon">
+                  </lord-icon>
+                </div>
+              </div>
+              <div class="cont-results">
+                <ul class="results" id="results">
+                  <!-- <li>
+                    <img src="./Resources/Logos marcas/Ford_logo_PNG2.png">
+                    Hola mundo
+                  </li> -->
+                </ul>
+              </div>
+              <!-- <div class="search-pro">
+                <div id="cont-opp-pro" class="active">
+                  <div class="content-select active" id="content-select">
+                    <select id="selectA">
+                      <option value="">Marcas:</option>
+                    </select>
+                  </div>
+                  <div class="content-select active" id="content-select-two">
+                    <select id="selectB">
+                      <option value="">Modelo:</option>
+                    </select>
+                  </div>
+                  <a href="" id="cont-select-search" class="active">
+                    <div class="">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/kkvxgpti.json"
+                        colors="primary:#fff"
+                        trigger="hover"
+                        style="width:35px;height:35px">
+                        </lord-icon>
+                    </div>
+                  </a>
+                </div>
+              </div> -->
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="8000" style="background-color: #3c3c3c;" id="slide-A">
+                    <img src="Resources/Mechanic/1-14124143252352--2.jpg" class="d-block w-100" alt="..." id="a-img">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000" style="background-color: #515151" id="slide-B">
+                    <img src="Resources/Mechanic/2-12948012741245--2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000" style="background-color: #666666" id="slide-C">
+                    <img src="Resources/Mechanic/3-17491827458921.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000" style="background-color: #8c8c8c" id="slide-D">
+                    <img src="Resources/Mechanic/6-12491124124243.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000"
+                  style="background-color: #b5b5b5" id="slide-E">
+                    <img src="Resources/Mechanic/5-17428912798123.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <section class="card-shoop" id="card-shoop">
+          <h1>Material para LEER e INTERPRETAR Diagramas Automotrices</h1>
+          <div class="wrapper">
+              <!-- item one -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/ABREVIATURAS-DE-COLOR-miniatura-lista-600x450.webp" alt="">
+                  <h3>ABREVIATURAS DE COLOR</h3>
+                  <div class="description-card"><span>Símbolos o abreviaturas con los que se identifican los colores que aparecen en los diagramas.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- item 2 -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/SIMBOLOS-DEL-DIAGRAMA-miniatura-lista-600x450.webp" alt="">
+                  <h3>SÍMBOLOS DEL DIAGRAMA</h3>
+                  <div class="description-card"><span>Ideal para saber fácilmente qué significa cada símbolo en nuestro diagrama eléctrico automotriz.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- item 3 -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/UBICACION-DE-COMPONENTES-miniatura-lista-600x450.webp" alt="">
+                  <h3>UBICACIÓN DE COMPONENTES</h3>
+                  <div class="description-card"><span>Con esto podemos ubicar el componente de forma sencilla en nuestro diagrama en PDF</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- item 4 -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/Aprende-a-LEER-e-INTERPRETAR-Diagramas-Automotrices-1-600x450.webp" alt="">
+                  <h3>GUIA COMPLETA</h3>
+                  <div class="description-card"><span>Conjunto de <strong>3 ebooks esenciales</strong> que te ayudarán a comprender e interpretar diagramas de cableado con facilidad.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="card-shoop cont-card-w" id="brands">
+        <h1>Selecciona la MARCA del Diagrama Eléctrico Automotriz que necesitas:</h1>
+        <div class="wrapper">
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/ACURA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">ACURA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/AUDI.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">AUDI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/BMW.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">BMW</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/buik.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">BUIK</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Cadillac.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">CADILLAC</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Chevrolet-Logo-700x394.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">CHEVROLET</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Chrysler.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">CHRYSLER</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/DODGE.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">DODGE</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Ford_logo_PNG2.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">FORD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/gmc-logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">GMC</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/HONDA-LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">HONDA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Hummer-Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">HUMMER</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/HYUNDAI 2.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">HYUNDAI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Infiniti-Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">INFINITI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/jaguar.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">JAGUAR</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/JEEP.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">JEEP</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/KIA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">KIA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/land-rover.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LAND ROVER</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Lexus.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LEXUS</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/lifan.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LIFAN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Lincoln LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LINCOLN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MAZDA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MAZDA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MERCEDES BENZ LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MERCEDES BENZ</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Mercury_Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MERCURY</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MINI.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MINI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MITSUBISHI.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MITSUBISHI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Nissan-Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">NISSAN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/PONTIAC.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">PONTIAC</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Porsche.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">PORSCHE</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Saab-logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SAAB</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Saturn.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SATURN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Scion.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SCION</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Smart.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SMART</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/SsangYong.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SSANGYONG</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/SUBARU.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SUBARU</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Suzuki.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SUZUKI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/TOYOTA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">TOYOTA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Volkswagen.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">VOLKSWAGEN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="#">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/VOLVO LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">VOLVO</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cont-questions">
+        <h1>Preguntas Frecuentes sobre los Diagramas Eléctricos Automotrices</h1>
+        <div class="cont-accordion">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué es un Diagrama Eléctrico del Automóvil?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    También conocido como esquemático o esquemas eléctricos, <strong>un diagrama eléctrico es una representación gráfica de un circuito eléctrico convencional</strong>, mismo que puede pertenecer a cualquier tipo de sistema eléctrico que se te pueda ocurrir.
+                  <br>
+                  <br>
+                    Generalmente, en los diagramas eléctricos podrás observar los símbolos que representan a los componentes del circuito eléctrico que se representa, de forma tal que puedas detectar no sólo cómo está compuesto este circuito eléctrico en su interior, sino que también puedas identificar qué es lo que lo compone y cómo estos elementos interactúan entre sí dentro del sistema.
+                    <br>
+                    <br>
+                    A diferencia de otra clase de diagramas o esquemas (como es el caso de los diagramas de distribución), <strong>el diagrama eléctrico muestra las conexiones eléctricas reales del sistema a estudiar</strong>, siendo un dibujo simplificado que representa fielmente la disposición de los cables, los componentes que lo integran y hasta las conexiones que se tienen entre cables y componentes para que sea fácil y rápido ver qué es lo que debería hacer ese circuito eléctrico al cual pertenece el diagrama.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Para que sirve un Diagrama Eléctrico Automotriz
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Los automóviles de hoy en día manejan cada vez más componentes eléctricos que los ayudan en su desempeño cotidiano. Dichos componentes, son los que se descomponen con mayor facilidad, perjudicando el rendimiento del vehículo a motor de forma que muy pocos pueden reparar.
+                    <br>
+                    <br>
+                    Por lo antes dicho y sabiendo qué es un diagrama eléctrico, se puede entender que los diagramas eléctricos automotrices sirven para representar de forma fiel, precisa y sencilla, un sistema eléctrico que se encuentre dentro del automóvil, <strong>facilitando así su mantenimiento o reparación además de fungir como guía para las conexiones eléctricas</strong> (y sus respectivos sistemas eléctricos) que este automóvil pudiese tener en su interior.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Ventajas de Utilizar Diagramas Automotrices
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Al contar con un diagrama eléctrico automotriz, podrás tener a la mano una representación exacta de las conexiones y componentes eléctricos que se ubican en ese sistema que pudiese presentar fallas en tu automóvil. Siendo así, se podrá trabajar de mejor forma en la reparación o mantenimiento de esta parte eléctrica del vehículo además de asegurar que todo se está realizando de la mejor forma posible.
+                    <br>
+                    <br>
+                    Otras de las ventajas de utilizar diagramas automotrices como estos podrían ser las siguientes:
+                    <br>
+                    <br>
+                    1. Los diagramas automotrices de calidad <strong>te permiten entender en cuestión de minutos un intrincado sistema eléctrico automotriz</strong>, lo que facilita su reparación.
+                    <br>
+                    <br>
+                    2. Son diagramas eléctricos precisos, manejando prácticamente los mismos símbolos que un diagrama eléctrico tradicional. ¡Esto hace que sea mucho más fácil hacer uso del diagrama!
+                    <br>
+                    <br>
+                    3. Puedes utilizar un diagrama eléctrico automotriz para conocer de mejor manera a tu vehículo, sabiendo qué es lo que hay realmente en su interior al menos a nivel eléctrico.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Tipos de Diagramas Automotrices
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    <strong>Los diagramas unifilares</strong> (o <strong>diagrama unifilar</strong>), los cuales se caracterizan por utilizar una sola línea para la representación de diversos conductores. Esta clase de diagrama suele implementar también referencias muy iguales en los extremos del mismo trazo para ser compuesto, utilizando así distintos símbolos que representan los componentes a estudiar del circuito.
+                    <br>
+                    <br>
+                    <strong>Los diagramas multifilares</strong> (o <strong>diagrama multifilar</strong>), siendo este un tipo de diagrama que representa las diferentes líneas internas del plano de forma independiente, pudiendo observar incluso en esta clase de representación cómo se suelen cruzar estas líneas para las diversas conexiones de los elementos del circuito. ¡Esta clase de diagramas son muy utilizados para los circuitos de potencia de motores eléctricos!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Diagramas Automotrices Gratis vs PAGO
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Hoy en día es muy normal encontrar en internet diagramas automotrices gratuitos que prometen brindar una representación fidedigna del circuito eléctrico que te interesa. Sin embargo, la realidad del asunto es que los diagramas eléctricos para autos gratis no suelen reflejar la realidad del circuito que dicen emular, logrando con esto que el circuito en sí termine por perjudicar o dañar más a tu auto de lo que podrías hacer en dado caso de que no contaras con el diagrama automotriz gratuito.
+                    <br>
+                    <br>
+                    Es por lo anteriormente comentado que <strong>siempre será una apuesta segura inclinarse por los diagramas automotrices pagos</strong>, ya que estos no solo están realizados por profesionales en el área de la reparación de circuitos eléctricos, sino que también están hechos con un nivel de detalle superior que sí te llega a brindar una visión mucho más completa de todo lo que pasa en el circuito automotriz que te interesa. ¡De ser posible siempre opta por diagramas automotrices pagos!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ¿Necesitas el diagrama eléctrico de un automóvil?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    <strong>¿Tienes problemas para encontrar un Diagrama Eléctrico Automotriz?</strong> ¡No te preocupes! Contáctanos y con gusto te ayudaremos. Para una comunicación más fluida, contactanos por el chat de whatsapp.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  ¿Los Diagramas Eléctricos que venden en diagramasautomotrices.com vienen a color?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Si. La gran mayoria de nuestros diagramas automotrices estan a color.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Cómo leer un Diagrama Automotriz o Circuito Eléctrico
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Para poder leer un diagrama eléctrico automotriz es necesario saber de forma básica cómo funciona un sistema eléctrico en general (lo cual no es para nada complicado de entender). Sabiendo esto, lo que quedaría saber es cuáles son los símbolos que componen el diagrama eléctrico que te pudiese interesar, deduciendo así para qué sirve cada uno de esos componentes del diagrama y cómo estos interactúan entre sí para dar el resultado esperado del circuito.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  Símbolos de Diagramas Eléctricos Automotrices
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    – <strong>Las resistencias, condensadores y bobinas inductoras</strong> (también llamados inductores solamente).
+                    <br>
+                    <br>
+                    – <strong>Los diodos y las fuentes rectificadoras</strong> respectivamente.
+                    <br>
+                    <br>
+                    – <strong>Los instrumentos de medición</strong> como amperímetros, óhmetros, voltímetros o termómetros.
+                    – <strong>La toma de tierra o toma de masa</strong>.
+                    – <strong>Bocinas, antenas, altavoces o lámparas</strong> (las cuales pueden ser de diversos tipos según el dibujo).
+                    – <strong>Generadores o alternadores</strong>, poniendo en esta línea los símbolos de motor de C.C de una y dos velocidades respectivamente.
+                    – <strong>Los relés</strong> (los cuales suelen tener varias representaciones dependiendo del diagrama) y los tiristores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cont-service">
+        <div>
+          <div class="cont-content">
+            <hr>
+            <h1>¿NO ENCUENTRAS TU DIAGRAMA?</h1>
+            <p>
+              <strong>¿Necesitas un Diagrama Eléctrico Automotriz? ¿Tienes problemas para encontrar un Diagrama Eléctrico Automotriz?</strong> ¡No te preocupes! Contáctanos y con gusto te ayudaremos.
+              <br>
+              <br>
+              Para una comunicación más fluida, contactanos por el chat de whatsapp.
+              </p>
+          </div>
+          <div class="cont-img">
+            <img src="./Resources/Diagramas-Electricos.com-3.webp" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="top">
+        <img src="Resources/logo-white.png" alt="">
+        <ul>
+          <li>
+            <h3>Recursos</h3>
+            <a href="#">Material para Leer e Interpretar Diagramas Automotrices</a>
+            <a href="#">Cómo Comprar y Pagar</a>
+            <a href="#">Buscador de CódigosDTC</a>
+          </li>
+          <li>
+            <h3>Politica</h3>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Política de Cookies</a>
+            <a href="#">Aviso Legal</a>
+          </li>
+          <li>
+            <h3>Horario de atencion</h3>
+            <a href="#">24 horas</a>
+          </li>
+          <li>
+            <h3>Contacto</h3>
+            <a href="#">WhatsApp</a>
+            <a href="#">Gmail</a>
+          </li>
+        </ul>
+      </section>
+      <section class="bottom">diagramas automotrices.com</section>
+    </footer>
+   
+    <script src="Js/js bootstrap/bootstrap.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
