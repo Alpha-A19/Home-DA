@@ -320,6 +320,7 @@ header .hamburger-wrapper button {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    text-align: center;
 }
 .cont-select-link h3 {
     color: #ffffff;
@@ -329,8 +330,10 @@ header .hamburger-wrapper button {
     height: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .cont-select-link a {
+    margin-top: 10px;
     text-decoration: none;
     border: 2px solid #ffffff;
     padding: 5px 10px;
@@ -936,6 +939,9 @@ section.bottom {
     .cont-service div .cont-content {
         width: 95%;
     }
+    .cont-select-link div {
+        width: 80%;
+    }
 }
 @media(max-width:660px) {
     .card-shoop .wrapper {
@@ -963,7 +969,10 @@ section.bottom {
         flex-direction: column;
         align-items: center;
         padding-bottom: 20px;
-    } 
+    }
+    .cont-select-link div {
+        width: 100%;
+    }
 }
 @media(max-width:500px) {
     .top-des {
@@ -984,6 +993,21 @@ section.bottom {
     }
     .slideshow-principal .search-Banner .search-pro {
         width: 95%;
+    }
+    .cont-select-link a {
+        font-size: 15px;
+    }
+    .cont-select-link div {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card-shoop h1 {
+        padding: 90px 0px 20px 0px;
+    }
+}
+@media(max-width:350px) {
+    .card-shoop .wrapper .shoop-card > div {
+        width: 250px;
     }
 }
 @media(width > 400px) {
