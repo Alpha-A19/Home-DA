@@ -1006,6 +1006,9 @@ section.bottom {
     }
 }
 @media(max-width:350px) {
+    .card-shoop .wrapper {
+        max-width: 280px;
+    }
     .card-shoop .wrapper .shoop-card > div {
         width: 250px;
     }
