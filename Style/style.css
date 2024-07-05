@@ -367,6 +367,12 @@ header .hamburger-wrapper button {
 .slideshow-principal .search-Banner div {
     display: flex;
 }
+.slideshow-principal .search-Banner .search-container {
+    border-radius: 24px 0 0 24px;
+    -webkit-box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+}
 .slideshow-principal .search-Banner div form div:first-child {
     width: 95%;
     display: flex;
@@ -393,6 +399,7 @@ header .hamburger-wrapper button {
 }
 .slideshow-principal .search-Banner div .search-option {
     width: 55px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
